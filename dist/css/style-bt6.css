@@ -1,0 +1,797 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+input,
+button {
+	border: none;
+	outline: none;
+	background: none;
+}
+
+.container {
+	max-width: 75%;
+	margin: 0 auto;
+}
+
+* {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.menu-bar {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	padding: 12px 20px;
+	background: #0d1326;
+	justify-content: space-between;
+}
+
+.menu-bar a {
+	margin-left: 40px;
+}
+
+.menu-bar a:nth-child(1) {
+	margin-left: 0;
+}
+
+.menu-bar a i {
+	font-size: 16px;
+	margin-right: 10px;
+	transition: all .5s;
+	color: #8f95a8;
+}
+
+.menu-bar a span {
+	font-size: 16px;
+	transition: all .5s;
+	color: #8f95a8;
+}
+
+.menu-bar a.no-style i {
+	color: royalblue;
+}
+
+.menu-bar a.no-style span {
+	color: #e6ebff;
+}
+
+.menu-bar a:hover i,
+.menu-bar a:hover span {
+	color: #e6ebff;
+}
+
+.menu-bar a:hover.no-style i {
+	color: royalblue;
+}
+
+.banner {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 700px;
+	background: url('https://demo.w3layouts.com/demosWTR/Freedom/01-11-2019/franchisor-freedom-demo_Free/632254492/web/assets/images/banner-3.jpg') no-repeat top center/cover;
+}
+
+.banner::after {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 700px;
+	content: '';
+	background: rgba(51, 51, 51, .2);
+}
+
+.banner .container {
+	position: relative;
+	z-index: 1;
+	padding: 30px 0;
+}
+
+.banner .container header {
+	display: flex;
+	margin-top: 40px;
+	justify-content: space-between;
+}
+
+.banner .container header h3 a {
+	font-size: 30px;
+	color: #fff;
+}
+
+.banner .container header nav > ul {
+	display: flex;
+}
+
+.banner .container header nav > ul > li {
+	position: relative;
+}
+
+.banner .container header nav > ul > li > a {
+	margin-left: 30px;
+	color: #fff;
+}
+
+.banner .container header nav > ul > li > a:hover {
+	color: red;
+}
+
+.banner .container header nav > ul > li:hover > ul.drop-down {
+	display: block;
+}
+
+.banner .container header nav > ul > li > ul.drop-down {
+	position: absolute;
+	z-index: 10;
+	left: 28px;
+	display: none;
+	width: 240%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	border: 1px solid #6a6969;
+	background: #222;
+}
+
+.banner .container header nav > ul > li > ul.drop-down li {
+	margin-bottom: 15px;
+}
+
+.banner .container header nav > ul > li > ul.drop-down li:last-child {
+	margin-bottom: 0;
+}
+
+.banner .container header nav > ul > li > ul.drop-down li a {
+	color: #fff;
+}
+
+.banner .container header nav > ul > li > ul.drop-down li a:hover {
+	color: red;
+}
+
+.banner .container .corporate {
+	width: 70%;
+	padding-top: 120px;
+	color: #fff;
+}
+
+.banner .container .corporate h1 {
+	font-size: 60px;
+	line-height: 65px;
+	margin-bottom: 80px;
+}
+
+.banner .container .corporate > p {
+	font-size: 13px;
+	font-weight: 500;
+	margin-bottom: 40px;
+}
+
+.banner .container .corporate .item-power {
+	display: flex;
+	justify-content: space-between;
+}
+
+.banner .container .corporate .item-power .item-text {
+	margin-left: 20px;
+}
+
+.banner .container .corporate .item-power .item-text h2 a {
+	color: #fff;
+}
+
+.banner .container .corporate .item-power .Varius {
+	display: flex;
+	align-items: center;
+}
+
+.banner .container .corporate .item-power .Varius .circle-power {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.banner .container .corporate .item-power .Varius .circle-power::before {
+	font-family: 'Font Awesome 5 Free';
+	font-size: 30px;
+	font-weight: bold;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	content: '\f011';
+	transform: translate(-50%, -50%);
+	color: #2231f6;
+}
+
+.banner .container .corporate .item-power .Turpis {
+	display: flex;
+	align-items: center;
+}
+
+.banner .container .corporate .item-power .Turpis .circle-water {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.banner .container .corporate .item-power .Turpis .circle-water::before {
+	font-family: 'Font Awesome 5 Free';
+	font-size: 30px;
+	font-weight: bold;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	content: '\f043';
+	transform: translate(-50%, -50%);
+	color: #2231f6;
+}
+
+.banner .container .corporate .item-power .Aliquam {
+	display: flex;
+	align-items: center;
+}
+
+.banner .container .corporate .item-power .Aliquam .circle-double {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.banner .container .corporate .item-power .Aliquam .circle-double::before {
+	font-family: 'Font Awesome 5 Free';
+	font-size: 30px;
+	font-weight: bold;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	content: '\f140';
+	transform: translate(-50%, -50%);
+	color: #2231f6;
+}
+
+.icon-company {
+	padding: 75px 0;
+	border-bottom: 1px solid #ebeaea;
+}
+
+.icon-company .container nav ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.icon-company .container nav ul li a {
+	position: relative;
+}
+
+.icon-company .container nav ul li a img {
+	max-width: 70%;
+}
+
+.icon-company .container nav ul li a::before {
+	position: absolute;
+	top: -22px;
+	left: 0;
+	width: 100%;
+	height: 200%;
+	content: '';
+	transition: all .5s;
+	opacity: 0;
+	background: #f5f9fc;
+}
+
+.icon-company .container nav ul li a:hover::before {
+	opacity: .3;
+}
+
+.get-Started {
+	padding: 100px 0;
+}
+
+.get-Started .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.get-Started .container img {
+	max-width: 50%;
+}
+
+.get-Started .container .itemText-getStarted h2 {
+	font-size: 35px;
+	line-height: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #000;
+}
+
+.get-Started .container .itemText-getStarted p {
+	font-size: 16px;
+	line-height: 24px;
+	color: #777;
+}
+
+.get-Started .container .itemText-getStarted form {
+	margin-top: 45px;
+}
+
+.get-Started .container .itemText-getStarted form .checkbox-groupfirst input {
+	margin-right: 15px;
+	margin-bottom: 20px;
+}
+
+.get-Started .container .itemText-getStarted form .checkbox-groupfirst label {
+	position: relative;
+	color: #777;
+}
+
+.get-Started .container .itemText-getStarted form .checkbox-groupfirst label::after {
+	font-family: 'Font Awesome 5 Free';
+	font-weight: bold;
+	position: absolute;
+	top: 1px;
+	left: -32px;
+	content: '\f00c';
+	color: royalblue;
+}
+
+.get-Started .container .itemText-getStarted form .checkbox-groupfirst label::before {
+	position: absolute;
+	top: 3px;
+	left: -35px;
+	width: 13px;
+	height: 13px;
+	content: '';
+	border: 1px solid royalblue;
+	border-radius: 5px;
+	background: white;
+}
+
+.developBP {
+	padding-top: 50px;
+}
+
+.developBP .container {
+	display: flex;
+}
+
+.developBP .container img {
+	width: 50%;
+}
+
+.developBP .container .itemText-Plan {
+	padding-left: 55px;
+}
+
+.developBP .container .itemText-Plan h1 {
+	font-size: 35px;
+	line-height: 40px;
+	color: #000;
+}
+
+.developBP .container .itemText-Plan p {
+	font-size: 16px;
+	line-height: 24px;
+	margin: 25px 0;
+	color: #777;
+}
+
+.developBP .container .itemText-Plan a {
+	font-size: 17px;
+	font-weight: bold;
+	color: #494747;
+}
+
+.developBP .container .itemText-Plan a i {
+	font-size: 15px;
+}
+
+.developBP .container .itemText-Plan a:hover {
+	color: red;
+}
+
+.update-number {
+	margin-top: 170px;
+	background: #20267c;
+}
+
+.update-number .container .row-numbergrid {
+	display: flex;
+	padding: 60px 0;
+	flex-wrap: wrap;
+}
+
+.update-number .container .row-numbergrid .col-4 {
+	width: 33.33333%;
+	border-right: 1px solid rgba(64, 94, 153, .54);
+}
+
+.update-number .container .row-numbergrid .col-4:nth-child(3) {
+	border-right: none;
+}
+
+.update-number .container .row-numbergrid .col-4 .content {
+	padding: 15px 0;
+	text-align: center;
+}
+
+.update-number .container .row-numbergrid .col-4 .content h1 {
+	font-size: 60px;
+	line-height: 60px;
+	margin-bottom: 15px;
+	color: #fff;
+}
+
+.update-number .container .row-numbergrid .col-4 .content p {
+	font-size: 20px;
+	color: #fff;
+}
+
+.banner-laptop {
+	position: relative;
+	height: 420px;
+	color: #fff;
+	background: url('https://demo.w3layouts.com/demosWTR/Freedom/01-11-2019/franchisor-freedom-demo_Free/632254492/web/assets/images/content_4.jpg') no-repeat center top/cover;
+}
+
+.banner-laptop::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 420px;
+	content: '';
+	background: rgba(0, 0, 0, .6);
+}
+
+.banner-laptop .container {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	padding: 80px 0;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.banner-laptop .container .business {
+	width: 90%;
+	margin-right: 200px;
+}
+
+.banner-laptop .container .business h3 {
+	font-size: 13px;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+}
+
+.banner-laptop .container .business p {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.banner-laptop .container .lorem-laptop h2 {
+	font-size: 35px;
+	line-height: 40px;
+	margin-bottom: 30px;
+}
+
+.banner-laptop .container .lorem-laptop a {
+	transition: all .5s;
+	color: #fff;
+}
+
+.banner-laptop .container .lorem-laptop a i {
+	font-size: 14px;
+}
+
+.banner-laptop .container .lorem-laptop a:hover {
+	color: #f5104e;
+}
+
+.services {
+	margin-top: 75px;
+}
+
+.services .container .title-service {
+	text-align: center;
+}
+
+.services .container .title-service h2 {
+	font-size: 35px;
+	margin-bottom: 20px;
+	color: #000;
+}
+
+.services .container .title-service p {
+	font-size: 16px;
+	line-height: 24px;
+	width: 50%;
+	margin: 0 auto;
+	color: #777;
+}
+
+.services .container .image-grid {
+	margin-top: 65px;
+}
+
+.services .container .image-grid .row-image {
+	display: flex;
+}
+
+.services .container .image-grid .row-image .col-4-2 {
+	width: 33.33333%;
+	padding: 0 15px;
+}
+
+.services .container .image-grid .row-image .col-4-2 a img {
+	max-width: 100%;
+}
+
+.services .container .image-grid .row-image .col-4-2 a .content-image {
+	padding: 30px;
+	text-align: center;
+	border-right: 1px solid rgba(130, 152, 171, .35);
+	border-bottom: 1px solid rgba(130, 152, 171, .35);
+	border-left: 1px solid rgba(130, 152, 171, .35);
+}
+
+.services .container .image-grid .row-image .col-4-2 a .content-image h4 {
+	font-size: 20px;
+	color: #000;
+}
+
+.services .container .image-grid .row-image .col-4-2 a .content-image p {
+	font-size: 16px;
+	line-height: 22px;
+	color: #777;
+}
+
+.banner-girl {
+	position: relative;
+	height: 404px;
+	margin-top: 80px;
+	background: url('https://demo.w3layouts.com/demosWTR/Freedom/01-11-2019/franchisor-freedom-demo_Free/632254492/web/assets/images/customer_bg.jpg') no-repeat center top/cover;
+}
+
+.banner-girl::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 404px;
+	content: '';
+	background: linear-gradient(45deg, #1625ef, #f3f3f300);
+}
+
+.banner-girl .container {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 13.5%;
+	transform: translateY(-50%);
+}
+
+.banner-girl .container h2 {
+	font-size: 35px;
+	width: 90%;
+	margin-bottom: 50px;
+	color: #fff;
+}
+
+.banner-girl .container .avatar {
+	display: flex;
+	align-items: center;
+}
+
+.banner-girl .container .avatar img {
+	width: 70px;
+	height: 70px;
+	margin-right: 30px;
+	border-radius: 50%;
+}
+
+.banner-girl .container .avatar .text-infor p {
+	font-size: 18px;
+	color: #fff;
+}
+
+.form-infor {
+	margin-top: 70px;
+}
+
+.form-infor .container {
+	text-align: center;
+}
+
+.form-infor .container span {
+	font-size: 13px;
+	font-weight: 500;
+	color: #8298ab;
+}
+
+.form-infor .container h1 {
+	font-size: 35px;
+	width: 40%;
+	margin: 20px auto;
+	margin-bottom: 40px;
+	color: #000;
+}
+
+.form-infor .container form {
+	margin-bottom: 20px;
+}
+
+.form-infor .container form input {
+	font-size: 15px;
+	width: 300px;
+	padding: 14px;
+	color: #8298ab;
+	background: #e1e9f0;
+}
+
+.form-infor .container form button {
+	font-size: 17px;
+	font-weight: 600;
+	padding: 13px 30px;
+	color: #f5f9fc;
+	background: #2231f6;
+}
+
+.form-infor .container form button:hover {
+	background: #f5104e;
+}
+
+.form-infor .container p {
+	font-size: 16px;
+	line-height: 24px;
+	max-width: 35%;
+	margin: 0 auto;
+	margin-bottom: 70px;
+	color: #777;
+}
+
+footer {
+	margin-bottom: 70px;
+	padding: 70px 0;
+	background: #000;
+}
+
+footer .container nav {
+	display: flex;
+}
+
+footer .container nav ul {
+	margin-left: 48px;
+}
+
+footer .container nav ul:first-child {
+	width: 15%;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+footer .container nav ul:last-child {
+	width: 30%;
+}
+
+footer .container nav ul p {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 26px;
+	color: #fff;
+}
+
+footer .container nav ul p.font26 {
+	font-size: 26px;
+}
+
+footer .container nav ul li {
+	margin-top: 15px;
+	color: #b0adad;
+}
+
+footer .container nav ul li a {
+	font-size: 16px;
+	color: #b0adad;
+}
+
+footer .container nav ul li a:hover {
+	color: #f5104e;
+}
+
+footer .container nav ul li a.pink-nostyle {
+	color: #f5104e;
+}
+
+footer .container nav ul li a i {
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+footer .container nav ul li a i.fa-facebook-f {
+	margin-left: 0;
+	color: #3b5998;
+}
+
+footer .container nav ul li a i.fa-twitter {
+	color: #00acee;
+}
+
+footer .container nav ul li a i.fa-instagram {
+	color: #3f729b;
+}
+
+footer .container nav ul li a i:hover.fa-facebook-f {
+	color: #3b5998;
+}
+
+footer .container nav ul li form {
+	margin-bottom: 20px;
+}
+
+footer .container nav ul li form input {
+	font-size: 15px;
+	width: 80%;
+	padding: 12px 20px;
+	background: #fff;
+}
+
+footer .container nav ul li form button {
+	font-size: 16px;
+	padding: 12px 20px;
+	background: #2231f6;
+}
+
+footer .container nav ul li form button i {
+	color: white;
+}
+
+footer .container nav ul li form button:hover {
+	background: #f5104e;
+}
+
+.buttonmovetop {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	background: #f5104e;
+}
+
+.buttonmovetop i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: white;
+}
+

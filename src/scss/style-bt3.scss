@@ -1,0 +1,111 @@
+@import 'reset';
+// span {
+//     text-decoration: line-through;
+//     font-weight: 600;
+// }
+.container {
+    max-width: 1200px;
+}
+.divMain {
+    width: 700px;
+    background: black;
+    padding: 20px;
+    .container {
+        display: flex;
+        .divAbout{
+            width: 400px;
+            margin-right: 20px;
+            h2 {
+                border-bottom: 1px solid grey;
+                padding-bottom: 20px;
+                color: white;
+            }
+            p {
+                padding-top: 20px;
+                color: #666;
+            }
+        }
+        .divLinks{
+            h2 {
+                border-bottom: 1px solid grey;
+                padding-bottom: 20px;
+                color: white;
+            }
+            nav {
+                display: flex;
+                justify-content: space-between;
+                ul{
+                    margin-right: 90px;
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                    li {
+                        margin-top: 15px;
+                        color: #666;
+                    }
+                }
+            }
+        }
+    }
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+.divRectangle{
+    max-width: 1000px;
+    margin: 20px auto;
+    p {
+        font-size: 25px;
+    }
+    .companyLogoandSlogan {
+        height: 120px;
+        width: 1000px;
+        background: grey;
+    }
+    .header-rectangle {
+        height: 240px;
+        width: 1000px;
+        background: grey;
+    }
+    .navigation-4 {
+        justify-content: space-between;
+        .smallestNavigation {
+            height: 50px;
+            width: 230px;
+            background: grey;
+            p{
+                text-align: center;
+                padding: 10px;
+            }
+        }
+    }
+    .aboutLinks {
+        justify-content: space-between;
+        .about {
+            height: 600px;
+            width: 530px;
+            background: grey;
+            margin-left: 0px;
+        }
+        .quickLinks {
+            nav {
+                ul {
+                    li {
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                        width: 430px;
+                        height: 290px;
+                        background: grey;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+// reset các thuộc tính css mặc định
+// nếu file có dấu _ thì k có build ra trong file css. Mục đích chính khi để dấu _ đằng trước file để import dô file style.css
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    //text-decoration: underline; //mặc định của thẻ a
+    text-decoration: none; // bỏ mặc định thẻ a
+}
+input, button {
+    border: none;
+    background: none;
+    outline: none;
+}

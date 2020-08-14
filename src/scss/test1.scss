@@ -1,0 +1,185 @@
+@import 'reset';
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.square-main {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    background: #fff2cc;
+    border: 1px solid #d6b656;
+    width: 500px;
+    height: 500px;
+}
+.triangle {
+    position: absolute;
+    top: 215px;
+    left: 180px;
+    border-width: 70px;
+    border-style: solid;
+    border-top-color: white;
+    border-bottom-color: transparent;
+    border-left-color: transparent ;
+    border-right-color: transparent;
+    display: inline-block;
+}
+.rectangle {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background: #f8cecc;
+    border: 1px solid #b85450;
+    top: 0px;
+    right: 0px;
+}
+.circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #d5e8d4;
+    border: 1px solid #94bd7a;
+    border-radius: 50%;
+    bottom: 0px;
+    left: 0px;
+}
+.square-purple {
+    position: absolute;
+    background: #e1d5e7;
+    border: 1px solid #9673a6;
+    width: 200px;
+    height: 200px;
+    bottom: 0px;
+    right: 0px;
+    .circle-green {
+        position: absolute;
+        background: #d5e8d4;
+        border: 1px solid #94bd7a;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        top: 0px;
+        right: 0px;
+    }
+}
+header {
+    margin-top: 100px;
+    margin-bottom: 1000px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Inconsolata', monospace;
+        .needHelp {
+            p {
+                margin-bottom: 20px;
+                color: #999;
+            }
+            i {
+                color: red;
+                margin-right: 10px;
+            }
+        }
+        .googles {
+            width: 500px;
+            h2 {
+                font-size: 50px;
+                font-weight: 700;
+                color: #454546;
+                display: flex;
+                justify-content: center;
+                font-family: 'Poppins', sans-serif;
+                border-bottom: 1px solid grey;
+                padding-bottom: 10px;
+            }
+            nav {
+                >ul {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 10px;
+                    >li {
+                        >a{
+                            color: #999;
+                            font-size: 16px;
+                            &.home {
+                                color: red;
+                            }
+                            &:hover {
+                                color: red;
+                            }
+                            i.fa-search {
+                                color: black;
+                            }
+                        }
+                        &:hover {
+                            >ul.drop-down {
+                                display: block;
+                            }
+                        }
+                        >ul.drop-down {
+                            position: absolute;
+                            background: white;
+                            padding: 10px 20px;
+                            z-index: 99;
+                            width: 80%;
+                            left: 9%;
+                            border: 1px solid #ddd;
+                            color: wheat;
+                            display: none;
+                            h3 {
+                                font-weight: 700;
+                                color: #333;
+                                margin: 20px 0px;
+                            }
+                            .row {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                margin-top: 20px;
+                                margin-bottom: 50px;
+                                padding-bottom: 10px;
+                                border-bottom: 1px solid #ddd;
+                                ul {
+                                    li {
+                                        a {
+                                            color: #999;
+                                            font-size: 16px;
+                                            &:hover {
+                                                color: black;
+                                            }
+                                        }
+                                    }
+                                    img {
+                                        width: 300px;
+                                        height: 200px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mycart {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        i{
+            margin-right: 30px;
+            color: black;
+        }
+        .boder-cart {
+                a{
+                    color: #454546;
+                    border: 1px solid #ddd;
+                    padding: 10px 20px;
+                }
+                i {
+                    margin-left: 5px;
+                    margin-right: 0px;
+                }
+            }
+        }
+}

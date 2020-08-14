@@ -1,0 +1,143 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+input,
+button {
+	border: none;
+	outline: none;
+	background: none;
+}
+
+.container {
+	max-width: 1200px;
+}
+
+.divMain {
+	width: 700px;
+	padding: 20px;
+	background: black;
+}
+
+.divMain .container {
+	display: flex;
+}
+
+.divMain .container .divAbout {
+	width: 400px;
+	margin-right: 20px;
+}
+
+.divMain .container .divAbout h2 {
+	padding-bottom: 20px;
+	color: white;
+	border-bottom: 1px solid grey;
+}
+
+.divMain .container .divAbout p {
+	padding-top: 20px;
+	color: #666;
+}
+
+.divMain .container .divLinks h2 {
+	padding-bottom: 20px;
+	color: white;
+	border-bottom: 1px solid grey;
+}
+
+.divMain .container .divLinks nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.divMain .container .divLinks nav ul {
+	margin-right: 90px;
+}
+
+.divMain .container .divLinks nav ul:last-child {
+	margin-right: 0;
+}
+
+.divMain .container .divLinks nav ul li {
+	margin-top: 15px;
+	color: #666;
+}
+
+.center {
+	display: flex;
+	margin: 0 auto;
+	margin-top: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+.divRectangle {
+	max-width: 1000px;
+	margin: 20px auto;
+}
+
+.divRectangle p {
+	font-size: 25px;
+}
+
+.divRectangle .companyLogoandSlogan {
+	width: 1000px;
+	height: 120px;
+	background: grey;
+}
+
+.divRectangle .header-rectangle {
+	width: 1000px;
+	height: 240px;
+	background: grey;
+}
+
+.divRectangle .navigation-4 {
+	justify-content: space-between;
+}
+
+.divRectangle .navigation-4 .smallestNavigation {
+	width: 230px;
+	height: 50px;
+	background: grey;
+}
+
+.divRectangle .navigation-4 .smallestNavigation p {
+	padding: 10px;
+	text-align: center;
+}
+
+.divRectangle .aboutLinks {
+	justify-content: space-between;
+}
+
+.divRectangle .aboutLinks .about {
+	width: 530px;
+	height: 600px;
+	margin-left: 0;
+	background: grey;
+}
+
+.divRectangle .aboutLinks .quickLinks nav ul li {
+	font-size: 20px;
+	width: 430px;
+	height: 290px;
+	margin-bottom: 20px;
+	background: grey;
+}
+
+.divRectangle .aboutLinks .quickLinks nav ul li:last-child {
+	margin-bottom: 0;
+}
+

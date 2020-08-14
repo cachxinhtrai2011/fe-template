@@ -1,0 +1,200 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+input,
+button {
+	border: none;
+	outline: none;
+	background: none;
+}
+
+.container {
+	max-width: 750px;
+	padding: 10px;
+}
+
+.phimmoi-net {
+	border-bottom: 1px solid grey;
+}
+
+.phimmoi-net .container {
+	margin-bottom: 10px;
+	margin-left: 0;
+	background: darkgray;
+}
+
+.phimmoi-net .container .title {
+	display: flex;
+	margin-bottom: 5px;
+	border-bottom: 1px solid grey;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.phimmoi-net .container .title h2 {
+	font-size: 30px;
+	color: yellow;
+}
+
+.phimmoi-net .container .title p {
+	color: white;
+}
+
+.phimmoi-net .container nav ul {
+	display: flex;
+	margin-bottom: 20px;
+	justify-content: space-between;
+}
+
+.phimmoi-net .container nav ul:last-child {
+	margin-bottom: 0;
+}
+
+.phimmoi-net .container nav ul li {
+	border: 1px solid black;
+	background-color: black;
+}
+
+.phimmoi-net .container nav ul li .banner {
+	position: relative;
+	height: 300px;
+	background: url('https://picsum.photos/200/300') no-repeat left top/cover;
+}
+
+.phimmoi-net .container nav ul li .banner .content {
+	position: absolute;
+	top: 10px;
+	width: 100%;
+}
+
+.phimmoi-net .container nav ul li .banner .content p {
+	font-size: 13px;
+	padding: 10px;
+	color: white;
+	background: red;
+}
+
+.phimmoi-net .container nav ul li .bannerhinh2 {
+	position: relative;
+	height: 300px;
+	background: url('https://demo.w3layouts.com/demosWTR/Freedom/20-02-2020/shot_pic-freedom-demo_Free/2131706274/web/assets/images/banner.jpg') no-repeat left top/cover;
+}
+
+.phimmoi-net .container nav ul li .bannerhinh2 .content {
+	position: absolute;
+	top: 10px;
+	width: 100%;
+}
+
+.phimmoi-net .container nav ul li .bannerhinh2 .content p {
+	font-size: 12px;
+	padding: 10px;
+	color: white;
+	background: red;
+}
+
+.phimmoi-net .container nav ul li .detailFilm {
+	padding: 10px;
+}
+
+.phimmoi-net .container nav ul li .detailFilm h4 {
+	font-size: 20px;
+	margin-bottom: 5px;
+	color: cyan;
+}
+
+.phimmoi-net .container nav ul li .detailFilm p {
+	font-size: 14px;
+	color: white;
+}
+
+.phimmoi-net .container nav ul li .detailFilm p.greyText {
+	margin-top: 8px;
+	color: grey;
+}
+
+.container-news {
+	max-width: 750px;
+	padding: 10px;
+}
+
+.news .container-news h1 {
+	font-style: italic;
+	position: relative;
+}
+
+.news .container-news h1 .rectangleGreen {
+	position: absolute;
+	top: 22px;
+	width: 750px;
+	height: 12px;
+	background-color: rgba(154, 205, 50, .5);
+}
+
+.news .container-news nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.news .container-news nav ul li {
+	display: flex;
+	padding: 20px 0;
+	border-bottom: 1px solid grey;
+}
+
+.news .container-news nav ul li:last-child {
+	border-bottom: 0 solid #000;
+}
+
+.news .container-news nav ul li img {
+	width: 100px;
+	height: 80px;
+}
+
+.news .container-news nav ul li div {
+	margin-left: 10px;
+}
+
+.news .container-news nav ul li div p {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.news .container-news nav ul li div .red {
+	color: red;
+}
+
+.news .container-news nav ul li div .blue {
+	color: blue;
+}
+
+.news .container-news nav ul li div .purple {
+	color: purple;
+}
+
+.news .container-news nav ul li div .green {
+	color: greenyellow;
+}
+
+.news .container-news nav ul li div .orange {
+	color: orange;
+}
+
+.news .container-news nav ul li div .blueBackground {
+	color: blue;
+	background-color: yellowgreen;
+}
+

@@ -1,0 +1,220 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+input,
+button {
+	border: none;
+	outline: none;
+	background: none;
+}
+
+.container {
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.square-main {
+	position: relative;
+	top: 50px;
+	left: 50px;
+	width: 500px;
+	height: 500px;
+	border: 1px solid #d6b656;
+	background: #fff2cc;
+}
+
+.triangle {
+	position: absolute;
+	top: 215px;
+	left: 180px;
+	display: inline-block;
+	border-width: 70px;
+	border-style: solid;
+	border-top-color: white;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+}
+
+.rectangle {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 200px;
+	height: 100px;
+	border: 1px solid #b85450;
+	background: #f8cecc;
+}
+
+.circle {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #94bd7a;
+	border-radius: 50%;
+	background: #d5e8d4;
+}
+
+.square-purple {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 200px;
+	height: 200px;
+	border: 1px solid #9673a6;
+	background: #e1d5e7;
+}
+
+.square-purple .circle-green {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #94bd7a;
+	border-radius: 50%;
+	background: #d5e8d4;
+}
+
+header {
+	margin-top: 100px;
+	margin-bottom: 1000px;
+}
+
+header .container {
+	font-family: 'Inconsolata', monospace;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .container .needHelp p {
+	margin-bottom: 20px;
+	color: #999;
+}
+
+header .container .needHelp i {
+	margin-right: 10px;
+	color: red;
+}
+
+header .container .googles {
+	width: 500px;
+}
+
+header .container .googles h2 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 50px;
+	font-weight: 700;
+	display: flex;
+	padding-bottom: 10px;
+	color: #454546;
+	border-bottom: 1px solid grey;
+	justify-content: center;
+}
+
+header .container .googles nav > ul {
+	display: flex;
+	margin-top: 10px;
+	justify-content: space-between;
+}
+
+header .container .googles nav > ul > li > a {
+	font-size: 16px;
+	color: #999;
+}
+
+header .container .googles nav > ul > li > a.home {
+	color: red;
+}
+
+header .container .googles nav > ul > li > a:hover {
+	color: red;
+}
+
+header .container .googles nav > ul > li > a i.fa-search {
+	color: black;
+}
+
+header .container .googles nav > ul > li:hover > ul.drop-down {
+	display: block;
+}
+
+header .container .googles nav > ul > li > ul.drop-down {
+	position: absolute;
+	z-index: 99;
+	left: 9%;
+	display: none;
+	width: 80%;
+	padding: 10px 20px;
+	color: wheat;
+	border: 1px solid #ddd;
+	background: white;
+}
+
+header .container .googles nav > ul > li > ul.drop-down h3 {
+	font-weight: 700;
+	margin: 20px 0;
+	color: #333;
+}
+
+header .container .googles nav > ul > li > ul.drop-down .row {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	justify-content: space-between;
+}
+
+header .container .googles nav > ul > li > ul.drop-down .row ul li a {
+	font-size: 16px;
+	color: #999;
+}
+
+header .container .googles nav > ul > li > ul.drop-down .row ul li a:hover {
+	color: black;
+}
+
+header .container .googles nav > ul > li > ul.drop-down .row ul img {
+	width: 300px;
+	height: 200px;
+}
+
+header .mycart {
+	display: flex;
+	padding: 20px;
+	align-items: center;
+}
+
+header .mycart i {
+	margin-right: 30px;
+	color: black;
+}
+
+header .mycart .boder-cart a {
+	padding: 10px 20px;
+	color: #454546;
+	border: 1px solid #ddd;
+}
+
+header .mycart .boder-cart i {
+	margin-right: 0;
+	margin-left: 5px;
+}
+
